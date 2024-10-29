@@ -14,7 +14,47 @@ int main()
     //motor(0, 85);
     //motor(3, 75);
     //msleep(----);
+
+    //12th number
+    motor(0, -60);
+    motor(3, -85);
+    msleep(1000);
+
+    //10th and 11th number
+    motor(0, -05);
+    motor(3, -85);
+    msleep(4777);
     
+    //9th number
+    motor(0, -85);
+    motor(3, -75);
+    msleep(1500);
+
+    //7th and 8th numbers
+    motor(0, -85);
+    motor(3, -15);
+    msleep(3700);
+    
+    //6th number
+    motor(0, -85);
+    motor(3, -75);
+    msleep(1500);
+
+    //5th number
+    motor(0, -10);
+    motor(3, -85);
+    msleep(3500);
+  
+    //4th number
+    motor(0, -85);
+    motor(3, -75);
+    msleep(2500);
+
+    // 3rd number
+    motor(0, -85);
+    motor(3, -10);
+    msleep(4500);
+
     // 1st and 2nd number
     motor(0, -85);
     motor(3, -75);
@@ -31,49 +71,6 @@ int main()
     motor(0, -85);
     motor(3, -75);
     msleep(1700);
-    
-    // 3rd number
-    motor(0, -85);
-    motor(3, -10);
-    msleep(4500);
-    
-    //4th number
-    motor(0, -85);
-    motor(3, -75);
-    msleep(2500);
-    
-    //5th number
-    motor(0, -10);
-    motor(3, -85);
-    msleep(3500);
-    
-    //6th number
-    motor(0, -85);
-    motor(3, -75);
-    msleep(1500);
-    
-    //7th and 8th numbers
-    motor(0, -85);
-    motor(3, -15);
-    msleep(3700);
-    
-    //9th number
-    motor(0, -85);
-    motor(3, -75);
-    msleep(1500);
-    
-    //10th and 11th number
-    motor(0, -05);
-    motor(3, -85);
-    msleep(4777);
-    
-    //12th number
-    motor(0, -60);
-    motor(3, -85);
-    msleep(1000);
-    
-        
-
     
     return 0;
 }
