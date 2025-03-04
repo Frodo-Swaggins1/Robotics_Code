@@ -4,31 +4,31 @@
 //------------------------
 //     SIMPLE MOTION
 //------------------------
-void GoF(){
+void forward(){
     motor(0, 83);
     motor(3, 83);
 }
 
-void GoB(){
+void backward(){
     motor(0, -83);
     motor(3, -83);
 }
 
-void TuL(){
-    motor(0, -83);
-    motor(3, 83);
-}
-
-void TuR(){
+void left(){
     motor(0, 83);
     motor(3, -83);
+}
+
+void right(){
+    motor(0, -83);
+    motor(3, 83);
 }
 
 //------------------------
 //          TIME
 //------------------------
 void T(int distance){
-    msleep(2000);
+    msleep(distance);
 }
 
 //------------------------
@@ -39,7 +39,7 @@ void CDo(){
 }
 
 void COp(){
-	set_servo_position(3, 1200);
+    set_servo_position(3, 1200);
 }
 
 void CUp(){
