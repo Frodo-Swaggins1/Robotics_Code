@@ -19,7 +19,7 @@ set_servo_position(0, 1853);
 forward();
 T(2000);
 right();
-T(920);
+T(700);
 forward();
 T(4000);
 set_servo_position(0, 1000);
@@ -30,7 +30,7 @@ T(1000);
 //      SCORE POMS
 //------------------------
 right();
-T(920);
+T(700);
 forward();
 T(600);
 set_servo_position(0, 1700);
