@@ -25,9 +25,6 @@ T(4000);
 set_servo_position(0, 1000);
 backward();
 T(1000);
-
-
-
     
 //------------------------
 //      SCORE POMS
