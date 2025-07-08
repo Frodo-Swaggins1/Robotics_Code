@@ -1,11 +1,11 @@
 #include <kipr/wombat.h>
 #include <stdio.h>
-
+int drift = 10;
 //------------------------
 //     SIMPLE MOTION
 //------------------------
 void forward(){
-    motor(0, 83);
+    motor(0, 83 + drift);
     motor(3, 83);
 }
 
@@ -13,6 +13,12 @@ void backward(){
     motor(0, -83);
     motor(3, -83);
 }
+
+void still(){
+    motor(0, 0);
+    motor(3, 0);
+}
+
 
 void left(){
     motor(0, 83);
