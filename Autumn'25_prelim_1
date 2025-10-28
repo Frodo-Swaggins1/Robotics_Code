@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <kipr/wombat.h>
+int main()
+{
+    enable_servos();
+
+    set_servo_position(0, 1800);
+    set_servo_position(3, 20);
+    msleep(100);
+
+    motor(0, 85);
+    motor(3, 85);
+    msleep(2800);
+    ao();
+
+    set_servo_position(3, 2000);
+    msleep(2000);
+    set_servo_position(0, 800);
+    msleep(100);
+  
+    motor(0, -85);
+    motor(3, 85);
+    msleep(1350);
+    ao();
+
+    
+    
+    set_servo_position(0, 1700);
+    msleep(2000);
+    set_servo_position(3, 20);
+    msleep(100);
+    ao();
+
+    motor(0, -85);
+    motor(3, -85);
+    msleep(500);
+    ao();
+
+    disable_servos();
+    
+    return 0;
+}
