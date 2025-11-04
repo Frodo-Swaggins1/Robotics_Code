@@ -2,22 +2,94 @@
 #include <kipr/wombat.h>
 int main()
 {
-    enable_servos();
+    int flag;
+    flag = 1;
 
-    motor(0, 100);
-    motor(3, 100);
-    msleep(4000);
+    //pin turn
+    if (flag = 1) {
 
-    motor(0, 40);
-    motor(3, 100);
-    msleep(5100);
-    
+    //turn 90
     motor(0, 100);
-    motor(3, 100);
-    msleep(4090);
+    motor(3, -100);
+    msleep(1000);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
     ao();
 
-    disable_servos();
+    //turn 180
+    motor(0, 100);
+    motor(3, -100);
+    msleep(2160);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 270
+    motor(0, 100);
+    motor(3, -100);
+    msleep(3350);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 360
+    motor(0, 100);
+    motor(3, -100);
+    msleep(4700);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+    }
+    //swing turn
+    else{
+//turn 90
+    motor(0, 100);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 180
+    motor(0, 100);
+    motor(3, 0);
+    msleep(2160);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 270
+    motor(0, 100);
+    motor(3, 0);
+    msleep(3350);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 360
+    motor(0, 100);
+    motor(3, 0);
+    msleep(4700);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+    }
     
     return 0;
 }
