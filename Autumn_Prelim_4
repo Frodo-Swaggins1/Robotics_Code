@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <kipr/wombat.h>
+int main()
+{
+
+
+    motor(0, 100);
+    motor(3, 100);
+    msleep(3000);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 90
+    motor(0, -100);
+    motor(3, 100);
+    msleep(1010);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+    
+    motor(0, 100);
+    motor(3, 100);
+    msleep(1400);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    //turn 90
+    motor(0, 100);
+    motor(3, 40);
+    msleep(3400);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+    
+    //turn 90
+    motor(0, 100);
+    motor(3, 20);
+    msleep(3000);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    motor(0, 100);
+    motor(3, 100);
+    msleep(8000);
+    ao();
+    motor(0, 0);
+    motor(3, 0);
+    msleep(1000);
+    ao();
+
+    return 0;
+}
