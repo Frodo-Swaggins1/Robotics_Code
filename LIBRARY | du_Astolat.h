@@ -77,6 +77,23 @@ motor(back_L, -80);
 msleep(dist);
 }
 
+void rightTURN (int dist){
+motor(back_R, -80);
+motor(front_R, -80);
+motor(front_L, 80);
+motor(back_L, 80);
+msleep(dist);
+}
+
+void leftTURN (int dist){
+motor(back_R, 80);
+motor(front_R, 80);
+motor(front_L, -80);
+motor(back_L, -80);
+msleep(dist);
+}
+
+
 void slowServo (int arm, int initial, int final, int speed)
 {	
     set_servo_position(arm, initial);
