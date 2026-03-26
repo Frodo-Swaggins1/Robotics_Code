@@ -4,10 +4,14 @@
 int main()
 {
     
-enable_servos();
+
 //----------------------------------------------------------//
 //    GET THE FIRST TWO PALLETS ON EXTERNAL LOADING DOCK    //
 //----------------------------------------------------------//
+    
+    wait_for_light(5);
+	shut_down_in(118);
+    enable_servos();
     
     left(1400);
     stop(100);
@@ -59,13 +63,28 @@ enable_servos();
     
     back(5000);
     stop(500);
-    forward(200);
+    forward(400);
     right(500);
     rightTURN(2000);
     
-    forward(1200);
+    forward(2000);
+    stop(200);
     
-disable_servos();
+    set_servo_position(0, 1200);
+    msleep(1000);
+    back(1000);
+    stop(200);
+    
+    rightTURN(4000);
+    
+    back(1000);
+    set_servo_position(1, 1550);
+    msleep(1000);
+    set_servo_position(2, 1083);
+    msleep(1000);
+    stop(500);
+    
+	disable_servos();
     
     return 0;
 }
