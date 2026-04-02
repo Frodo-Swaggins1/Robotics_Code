@@ -17,14 +17,14 @@ int main()
     stop(100);
     forward(200);
     stop(100);
-    left(4500);
+    left(4300);
     stop(200);
     back(2700);
     stop(200);
     
     forward(1000);
     stop(200);
-    right(500);
+    right(800);
     stop(200);
     forward(2300);
     stop(200);
@@ -41,6 +41,8 @@ int main()
     msleep(1000);
     stop(200);
     
+    back(200);
+    stop(100);
     //back claw closed
     
     set_servo_position(2, 760);
@@ -56,13 +58,14 @@ int main()
     
     //1450 for forklift lower
 
+    right(300);
+    stop(100);
     set_servo_position(0, 1372);
     msleep(1000);
     stop(300);
     forward(200);
     stop(100);
-    right(150);
-    stop(100);
+
     forward(800);
     stop(100);
     set_servo_position(0, 20);
